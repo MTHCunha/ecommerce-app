@@ -7,5 +7,7 @@ export default function App() {
     setupDatabase();
   }, []);
 
+  //Teste
+
   return <AppNavigator />;
 }
