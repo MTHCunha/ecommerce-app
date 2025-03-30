@@ -9,20 +9,20 @@ const Stack = createNativeStackNavigator()
 
 export default function App() {
   return (
-    // <NavigationContainer>
-    //   <View style={styles.container}>
-    //     <Text>
-    //       Teste de Tela e Chamada
-    //     </Text>
-    //     <StatusBar style="auto"></StatusBar>
-    //   </View>
-    // </NavigationContainer>
+    <>
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen
+            name="home"
+            component={Home}
+            options={{
+              headerShown: false,
+            }}>
+          </Stack.Screen>
+        </Stack.Navigator>
+      </NavigationContainer>
+    </>
 
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="home" component={Home}></Stack.Screen>
-      </Stack.Navigator>
-    </NavigationContainer>
   );
 }
 

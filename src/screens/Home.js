@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <Layout>
             <View style={styles.container}>
-                <Text>Home</Text>
+                <Text>Testefd33</Text>
             </View>
 
         </Layout>
@@ -18,7 +18,7 @@ export default Home;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "#fff",
+        backgroundColor: "rgb(95, 61, 61)",
         alignItems: 'center',
         justifyContent: 'center',
     }
