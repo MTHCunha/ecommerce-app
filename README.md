@@ -1,4 +1,4 @@
-# Nome do Projeto
+# E-Commerce App React Native
 
 ![Badge](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)
 
@@ -31,10 +31,10 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 Antes de começar, você precisa ter instalado:
 
-install npm
-npm install @react-navigation/native
-npx expo install react-native-screens react-native-safe-area-context
-npm install --save react-native-vector-icons
+- install npm
+- npm install @react-navigation/native
+- npx expo install react-native-screens react-native-safe-area-context
+- npm install --save react-native-vector-icons
 
 - [Lista de dependências necessárias]
 - [Como instalar cada dependência]
