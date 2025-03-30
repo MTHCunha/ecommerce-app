@@ -1,13 +1,36 @@
-import { useEffect } from 'react';
-import { setupDatabase } from './src/database/db';
-import AppNavigator from './src/navigation/AppNavigator';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import Home from "./src/screens/Home";
+
+//routes
+const Stack = createNativeStackNavigator()
 
 export default function App() {
-  useEffect(() => {
-    setupDatabase();
-  }, []);
+  return (
+    // <NavigationContainer>
+    //   <View style={styles.container}>
+    //     <Text>
+    //       Teste de Tela e Chamada
+    //     </Text>
+    //     <StatusBar style="auto"></StatusBar>
+    //   </View>
+    // </NavigationContainer>
 
-  //Teste
-
-  return <AppNavigator />;
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="home" component={Home}></Stack.Screen>
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: 'center',
+    justifyContent: 'center',
+  }
+})
