@@ -5,8 +5,8 @@ import Layout from '../components/Layout/Layout';
 const Home = () => {
     return (
         <Layout>
-            <View style={styles.container}>
-                <Text>Testefd33</Text>
+            <View>
+                <Text>teste</Text>
             </View>
 
         </Layout>
@@ -18,7 +18,7 @@ export default Home;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "rgb(95, 61, 61)",
+        backgroundColor: "rgb(121, 91, 91)",
         alignItems: 'center',
         justifyContent: 'center',
     }

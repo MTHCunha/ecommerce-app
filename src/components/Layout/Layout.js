@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
     return (
         <>
             <StatusBar />
-            <Header />
+            {/* <Header /> */}
             <View>{children}</View>
             <View style={styles.footer}>
                 <Footer />
